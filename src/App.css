@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+body {
+  background-color: #e9ded0;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2em;
+
+  color: #000;
+}
+
+#root {
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+}

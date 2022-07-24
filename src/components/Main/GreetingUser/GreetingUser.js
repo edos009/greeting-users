@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import GreetingUserList from "./GreetingUserList/GreetingUserList";
+import SortByIdBtn from "./SortByIdBtn/SortByIdBtn";
+import SortByFirstNameBtn from "./SortByFirstNameBtn/SortByFirstNameBtn";
 
 class GreetingUser extends Component {
   constructor(props) {
@@ -48,14 +50,12 @@ class GreetingUser extends Component {
     const { isSortByIdUp, isSortByFirstName, users } = this.state;
     return (
       <section>
+        <SortByIdBtn sortById={this.sortById} isSortByIdUp={isSortByIdUp} />
+        <SortByFirstNameBtn
+          sortByFirstName={this.sortByFirstName}
+          isSortByFirstName={isSortByFirstName}
+        />
         <GreetingUserList users={users} />
-        <button onClick={this.sortById}>
-          Sort by ID: {isSortByIdUp ? "Down" : "Up"}
-        </button>
-        <br />
-        <button onClick={this.sortByFirstName}>
-          Sort by First Name: {isSortByFirstName ? "Down" : "Up"}
-        </button>
       </section>
     );
   }

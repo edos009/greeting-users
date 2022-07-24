@@ -1,0 +1,31 @@
+.user_item_box{
+  margin-bottom: 15px;
+}
+
+.user_item{
+  margin-bottom: 5px;
+
+  color: teal;
+
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.btn_say_goodbye{
+  display: inline-block;
+  max-width: 150px;
+  width: 100%;
+
+  border: 2px solid teal;
+  border-radius: 6px;
+  padding: 7px 0;
+
+  background-color: #fff;
+  color: teal;
+
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
